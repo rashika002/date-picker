@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+import React from 'react';
+import DatePicker from './components/Datepicker';
+import RecurrenceOptions from './components/RecurrenceOptions';
+import CustomizationPanel from './components/CustomizationPanel';
+import MiniCalendar from './components/MiniCalendar';
+import { RecurrenceProvider } from './context/RecurrenceContext';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RecurrenceProvider>
+      <div className="container mt-4">
+        <h1 className="display-6 text-center mb-4">Recurring Date Picker</h1>
+        <div className="row">
+          <div className="col">
+            <DatePicker />
+            <RecurrenceOptions />
+            <CustomizationPanel />
+            <MiniCalendar />
+          </div>
+        </div>
+      </div>
+    </RecurrenceProvider>
   );
 }
 

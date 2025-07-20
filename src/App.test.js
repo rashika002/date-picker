@@ -1,8 +1,12 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+   import { render, screen } from '@testing-library/react';
+   import App from './App';
+
+   describe('App', () => {
+     test('renders Recurring Date Picker heading', () => {
+       render(<App />);
+       const headingElement = screen.getByText(/Recurring Date Picker/i);
+       expect(headingElement).toBeInTheDocument();
+     });
+   });
+   
