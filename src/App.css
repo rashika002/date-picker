@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+.custom-heading {
+  color: #2F4F4F !important; 
+}
+
+.custom-bg {
+  background-color: #EAD2AC !important; 
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+  transition: background-color 0.2s;
+}
+
+.card {
+  border-radius: 10px;
+} */

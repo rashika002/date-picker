@@ -1,17 +1,17 @@
 
-// Context to manage global state for recurrence settings
+
 import React, { createContext, useState } from 'react';
 
 export const RecurrenceContext = createContext();
 
 export const RecurrenceProvider = ({ children }) => {
   const [state, setState] = useState({
-    startDate: null, // Start date for recurrence
-    endDate: null, // Optional end date
-    recurrenceType: 'daily', // daily, weekly, monthly, yearly
-    interval: 1, // Every X days/weeks/months
-    specificDays: [], // e.g., ['Monday', 'Wednesday'] for weekly
-    monthlyPattern: null, // e.g., { type: 'second', day: 'Tuesday' }
+    startDate: null, 
+    endDate: null, 
+    recurrenceType: 'daily',
+    interval: 1, 
+    specificDays: [], 
+    monthlyPattern: null, 
   });
 
   const updateState = (newState) => {
