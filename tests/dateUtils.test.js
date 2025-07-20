@@ -1,6 +1,6 @@
 
-   // Test for recurring date calculations
-   import { calculateRecurringDates } from '../utils/dateUtils';
+   
+   import { calculateRecurringDates } from '../src/utils/dateUtils';
    import { addDays } from 'date-fns';
 
    describe('calculateRecurringDates', () => {
@@ -13,7 +13,7 @@
      });
 
      test('should calculate weekly recurring dates for specific days', () => {
-       const startDate = new Date('2025-01-01'); // Wednesday
+       const startDate = new Date('2025-01-01'); 
        const endDate = new Date('2025-01-08');
        const result = calculateRecurringDates(startDate, endDate, 'weekly', 1, ['Wednesday'], null);
        expect(result).toHaveLength(2);

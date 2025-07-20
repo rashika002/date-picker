@@ -1,7 +1,7 @@
 
    // Test to ensure all components render correctly
    import { render, screen } from '@testing-library/react';
-   import App from '../App';
+   import App from '../src/App';
 
    describe('Recurring Date Picker', () => {
      test('renders all components', () => {
